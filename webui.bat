@@ -1,4 +1,5 @@
 @echo off
+set PYTORCH_CUDA_ALLOC_CONF=garbage_collection_threshold:0.8, max_split_size_mb:128
 
 if not defined PYTHON (set PYTHON=python)
 if not defined VENV_DIR (set "VENV_DIR=%~dp0%venv")
